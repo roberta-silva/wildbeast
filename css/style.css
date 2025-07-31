@@ -32,7 +32,7 @@ img {
 /* header */
 .header {
   grid-area: header;
-  background: linear-gradient(135deg, #8844ee, #b07dfd);
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -61,9 +61,27 @@ img {
   margin-left: 30px;
 }
 
+/* sidenav */
 .sidenav {
   grid-area: sidenav;
+  background: #fafbfc;
+  padding: 30px;
 }
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0px auto 30px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: 0.1s ease-out;
+}
+.sidenav li a:hover {
+  background: #b07dfb;
+}
+
 .content {
   grid-area: content;
 }
